@@ -1,38 +1,122 @@
-**NFT Minter & Impact Market Maker**
+# NFT Minter & Impact Market Maker - README
 
-Aquí podrás encontrar todo sobre el diseño y funciones del NFT Minter y su Evolución a un mercado digital el cual vamos a llamar Impact Market Makers, haciendo alusión a los mercados de impacto digitalizados. Finalizando con un ROADMAP de desarrollo de dApp.
+## Table of Contents
+- [Introduction](#introduction)
+- [Vision and Mission](#vision-and-mission)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Development](#development)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-**Vamos a empezar con el NFT Minter:**
+## Introduction
+Welcome to the NFT Minter & Impact Market Maker repository! This project is designed to create market conditions for selling impact NFTs, providing a platform where users can mint, trade, and manage NFTs that represent various forms of impact and social good. Deployed on the Arbitrum network, this project aims to merge blockchain technology with real-world positive change.
 
-**Introducción:**
-  La función principal del NFT Minter, es democratizar (llevar a todos) la posibilidad de poder hacer colecciones de NFTs DE IMPACTO de la manera más sencilla posible en cualquier Layer 2. Siendo esto algo que puede ser deployado sobre cualquier mainnet. Por el momento vamos a comenzar en CELO, pues el roadmap ahí se pone muy interesante. Primero, las colecciones serán de utilidad, mientras generamos las condiciones para generar un Marketplace. Siendo no sólo un lugar donde se pueden hacer NFTs, si no, también vender NFTs, siendo una plataforma que ayuda a Agentes de Impacto a Capitalizar sus actividades de impacto, con un sistema diseñado para atestar, verificar, medir resultados y más. Vamos a dividir este desarrollo en 3 partes para poder explicar y llegar al resutlado final:_ 1) NFT Minter, 2) Token Minter, 3) Impact Marketplace _
+## Vision and Mission
+### Vision
+To create a thriving ecosystem where impact-driven activities are tokenized and traded, enabling transparent and efficient support for social and environmental initiatives.
 
+### Mission
+To empower communities by providing a decentralized platform that facilitates the creation and exchange of impact NFTs, leveraging blockchain technology to drive meaningful change.
 
-**_1) NFT Minter:_**
+## Features
+- **NFT Minter:** Easily create and mint NFTs representing various forms of impact.
+- **Impact Market Maker:** Trade and manage impact NFTs in a decentralized marketplace.
+- **Transparency and Security:** Built on the Arbitrum network to ensure secure and transparent transactions.
+- **Community Governance:** Enable community participation in decision-making processes.
+- **Attestation System:** Verifies the authenticity and impact of activities represented by NFTs.
+- **Decentralized Monitoring, Reporting, and Verification (deMRV):** Ensures the accuracy and reliability of impact data.
 
-Puedes crear una colección de manera sencilla y económica de NFTs, ya sea únicos o iguales. Los cuales podrán tener los usos de caso que sean designados por los creadores de la colección. Es decir, crear tus propios POAPS, NFTs coleccionables, NFTickets, NFTs que representen árboles plantados, NFTs para certificar productos orgánicos, NFTs para financiar proyectos de infraestructura comunitaria, NFTs que financien servicios de salud para comunidades vulnerables, NFTs para financiar la construcción de instalaciones de energía renovable, por mencionar algunos ejemplos. Puedes crear una colección de manera sencilla y económica de NFTs, ya sea únicos o iguales. Los cuales podrán tener los usos de caso que sean designados por los creadores de la colección. Es decir, crear tus propios POAPS, NFTs coleccionables, NFTickets, NFTs que representen árboles plantados, NFTs para certificar productos orgánicos, NFTs para financiar proyectos de infraestructura comunitaria, NFTs que financien servicios de salud para comunidades vulnerables, NFTs para financiar la construcción de instalaciones de energía renovable, por mencionar algunos ejemplos.
-  
-    Para esto, deberás:
-    1.1) Crear un Nuevo Item: Esta sección te permite subir un archivo, ya sea imágen, video, GIF, MP4, con un tamaño que no exceda los 100mb.
-     1.2) Poner en Marketplace: Esta sección (actualmente no disponible hasta desarrollar el makretplace), es para poner un precio del NFT, con las opciones de poner un /precio fijo, /precio inicial de subasta y /tiempo de subasta. tiene un boton de activar/desactivar, actualmente estará desactivado. 
-    1.3)  Precio: Actualemente, el precio estará en "0s" buscando generar transacciones de utilidad en la comunidad, familiarizandose con la platafomra y sumando a más personas al sistema. La función actual queda limitada a poder  (enviar y recibir), con fin de probar que los contratos inteligentes funcionen y que la interfaz sea sencilla para el usuario (generando contenido educativo). Se buscará la opción de integrar a la venta en Celosphere, en lo que se concluye el marketplace.
-    1.4) Nombre: Para reconocer tu proyecto dentro de todos, tienes que empezar con /Eltítulodetuproyecto-Elnombredetucolección. 
-    1.5) Link externo de tu proyecto: Para conocer tu iniciativa, pon el link de tu página web o lugar donde se pueda conocer tu proyecto a fondo. 
-    1.6) Cuéntanos tu historia: Para conocer más sobre tu iniciativa y tu trabajo de impacto, escribe de manera detallada tus actividades.
-    1.7) Añade una descripción: Ésta aparecerá debajo de tu item, una vez que sea un NFT. 
-    1.8) Selecciona tu lexicón EBF: Escoge una de las 6 palabras que englobe tu impacto. (Agua, Aire, viento, Tierra, Biodiversidad, Equidad, y carbón.)
-    1.9) Selecciona tu rubro dentro de la Dona económica: (Agua, alimentos, salud, educación, ingresos y trabajo, paz y justicia, participación política, redes sociales, igualdad de género, vivienda, energía, equidad social, cambio climático, integridad de la biosfera, ciclos de fósforo y nitrógeno, acidificación de los océanos, uso del agua dulce, cambios en el uso del suelo, contaminación química, contaminación del aire, capa de ozono.)
-    
-    
+## Getting Started
+### Prerequisites
+- [Node.js](https://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
+- [Arbitrum Wallet](https://arbitrum.io/)
 
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/nft-minter-impact-market-maker.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd nft-minter-impact-market-maker
+   ```
+3. Install dependencies:
+   ```bash
+   yarn install
+   ```
 
+### Configuration
+1. Create a `.env` file in the root directory and add your environment variables:
+   ```env
+   REACT_APP_ARBITRUM_RPC_URL=your_arbitrum_rpc_url
+   REACT_APP_CONTRACT_ADDRESS=your_contract_address
+   ```
 
+## Usage
+### Running the Application
+1. Start the development server:
+   ```bash
+   yarn start
+   ```
+2. Open your browser and navigate to `http://localhost:3000`.
 
+### Minting NFTs
+1. Connect your Arbitrum wallet.
+2. Fill in the details for your NFT (e.g., name, description, image).
+3. Click the "Mint" button to create your NFT.
 
-Liquidez onchain y off chain con ecommerce con transaction volume 
+### Trading NFTs
+1. Browse the marketplace to view available impact NFTs.
+2. Select an NFT to view its details and trading options.
+3. Follow the prompts to buy or sell NFTs.
 
-una vez que haya una cantidad grande de usuarios, se lanza propuesta a celo forum para lanzar el cMEP (Celo Mexican Peso). 
+### Using the Attestation System
+1. Navigate to the attestation section in the application.
+2. Submit documentation or evidence supporting the impact of the activity.
+3. Await verification from the community or designated authorities.
 
+### Using the deMRV System
+1. Navigate to the deMRV section in the application.
+2. Upload or link data sources for monitoring, reporting, and verification.
+3. The system will analyze and validate the data, ensuring its accuracy and reliability.
 
+## Development
+### Building the Application
+1. Build the project for production:
+   ```bash
+   yarn build
+   ```
 
-   
+### Testing
+1. Run the tests:
+   ```bash
+   yarn test
+   ```
+
+## Contributing
+We welcome contributions from the community! To contribute, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Make your changes and commit them with descriptive messages.
+4. Push your changes to your fork:
+   ```bash
+   git push origin feature-name
+   ```
+5. Create a pull request to the main repository.
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+For questions or support, please contact us at:
+- Email: [gm@refimexico.org](mailto:gm@refimexico.org)
+- Telegram: [ReFi Mexico Group](https://t.me/refimexico)
+
+Thank you for your interest in the NFT Minter & Impact Market Maker project! We look forward to your contributions and support.
