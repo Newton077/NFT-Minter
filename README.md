@@ -12,7 +12,7 @@
 - [Contact](#contact)
 
 ## Introduction
-Welcome to the NFT Minter & Impact Market Maker repository! This project is designed to create market conditions for selling impact NFTs, providing a platform where users can mint, trade, and manage NFTs that represent various forms of impact and social good. Deployed on the Arbitrum network, this project aims to merge blockchain technology with real-world positive change.
+Welcome to the NFT Minter & Impact Market Maker repository! This project is designed to create market conditions for selling impact NFTs, providing a platform where users can mint, trade, and manage NFTs that represent various forms of impact and social good. Deployed on the Celo network, this project aims to merge blockchain technology with real-world positive change.
 
 ## Vision and Mission
 ### Vision
