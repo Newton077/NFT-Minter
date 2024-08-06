@@ -1,3 +1,7 @@
+Here's the updated README with the new features included:
+
+---
+
 # NFT Minter & Impact Market Maker - README
 
 ## Table of Contents
@@ -24,16 +28,19 @@ To empower communities by providing a decentralized platform that facilitates th
 ## Features
 - **NFT Minter:** Easily create and mint NFTs representing various forms of impact.
 - **Impact Market Maker:** Trade and manage impact NFTs in a decentralized marketplace.
-- **Transparency and Security:** Built on the Arbitrum network to ensure secure and transparent transactions.
+- **Transparency and Security:** Built on the Celo network to ensure secure and transparent transactions.
 - **Community Governance:** Enable community participation in decision-making processes.
 - **Attestation System:** Verifies the authenticity and impact of activities represented by NFTs.
 - **Decentralized Monitoring, Reporting, and Verification (deMRV):** Ensures the accuracy and reliability of impact data.
+- **R3G3N M3ntorship:** Push offline and Web 2 communities to adopt Web 3.0 technologies and regenerative habits, integrating built-in frameworks for equitable resource distribution.
+- **Funding Mechanisms:** Utilize decentralized donation platforms like Gitcoin and Giveth, endowments, liquidity pools, and Bonding Curves to maximize funding opportunities for communities.
 
 ## Getting Started
 ### Prerequisites
 - [Node.js](https://nodejs.org/)
 - [Yarn](https://yarnpkg.com/)
-- [Arbitrum Wallet](https://arbitrum.io/)
+- [Celo Wallet](https://celo.org/developers/wallet)
+- [ContractKit](https://www.npmjs.com/package/@celo/contractkit)
 
 ### Installation
 1. Clone the repository:
@@ -52,7 +59,7 @@ To empower communities by providing a decentralized platform that facilitates th
 ### Configuration
 1. Create a `.env` file in the root directory and add your environment variables:
    ```env
-   REACT_APP_ARBITRUM_RPC_URL=your_arbitrum_rpc_url
+   REACT_APP_CELO_RPC_URL=your_celo_rpc_url
    REACT_APP_CONTRACT_ADDRESS=your_contract_address
    ```
 
@@ -65,7 +72,7 @@ To empower communities by providing a decentralized platform that facilitates th
 2. Open your browser and navigate to `http://localhost:3000`.
 
 ### Minting NFTs
-1. Connect your Arbitrum wallet.
+1. Connect your Celo wallet.
 2. Fill in the details for your NFT (e.g., name, description, image).
 3. Click the "Mint" button to create your NFT.
 
